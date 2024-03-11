@@ -1,134 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 1 202203806</title>
+    <title>Prácticas Iniciales</title>
+    <!-- Incluyendo el archivo JavaScript del encabezado -->
     <link rel="stylesheet" href="Css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
+<!-- Contenedor para el encabezado -->
+<div id="header-container"></div>
 <body>
-    <div class="nav-bar">
+    <div class="container">
+        <div class="tab-pages">
+            <button class="btn btn-primary" onclick="openTab('tab1')">INFORME 1</button>
+            <button class="btn btn-secondary" onclick="openTab('tab2')">INFORME 2</button>
+            <button class="btn btn-success" onclick="openTab('tab3')">INFORME 3</button>
+        </div>
+
+        <div id="tab1" class="tab-pane">
+            <!-- Contenido de la primera pestaña -->
+            <main style="animation: fade-in 1s ease-out;">
+                <section id="one" class="section-one">
+                    <div class="section-container">
+                        <div class="first-sub-section">
+                            <br>
+                            <h1 class="title">Mantenimiento de Una Computadora "Laptop"</h1>
+                            <br>
+                            
+                            <p class="parrafo"> 
+                                En la presente práctica se llevará a cabo un mantenimiento de una laptop, con el objetivo de garantizar su óptimo rendimiento. Este mantenimiento implicará una limpieza profunda que abarca diversos pasos detallados, así como la consideración de cuidados específicos para asegurar un óptimo resultado.
+                                Es esencial realizar una limpieza completa de los equipos de trabajo, como las laptops, con el fin de preservar su eficiencia y prolongar su vida útil.
+                                Durante el procedimiento, se seguirán pasos recomendados para llevar a cabo la limpieza, los cuales incluyen la remoción de polvo y suciedad de las superficies internas y externas de la laptop. Se prestará especial atención a áreas de difícil acceso, como los ventiladores y las ranuras de ventilación, que pueden acumular una cantidad de residuos y afectar el rendimiento de la Laptop.
+                            </p>
+                            <br>
+                            <h2 class="title">Materiales para el Mantenimiento de una Laptop</h2>
+                            <br>
+
+                            <ul class="list">
+                                <li>Aire comprimido</li>
+                                <li>Limpia Contactos o Alcohol Isopropílico</li>
+                                <li>Pasta térmica</li>
+                                <li>Trapo de Limpieza o Toalla Absorbente (Papel Mayordomo)</li>
+                                <li>Kit de destornilladores</li>
+                            </ul>
+            
+                            <br>
+                            <h2 class="title" style="text-align: center;">Video Explicativo de Mantenimiento de Laptop</h2>
+                            <br>
+                            <h6 style="text-align: center;">Video en Youtube</h6>
+                            <br>
+                            <div class="main-video">
+                                <a href="https://www.youtube.com/watch?v=nl5BuAOgiFM" target="_BLANK">
+                                    <img src="http://i3.ytimg.com/vi/nl5BuAOgiFM/hqdefault.jpg" class="video-image" />
+                                </a>
+                            </div>
+                            <br>
+                            <h6 style="text-align: center;">Link Google Drive</h6>
+                            <br>
+                            <p class="centered-link" style="text-align: center;">
+                            <a href="https://drive.google.com/file/d/1C4nkQhY3zRqJ2YE64b_T1GVBAtspnjq7/view?usp=sharing" target="_BLANK">https://drive.google.com/file/d/1C4nkQhY3zRqJ2YE64b_T1GVBAtspnjq7/view?usp=sharing</a></p>
+                            <br>
+                            
+                            <br>
+                            <h2 class="title" style="text-align: center;">Manual de Usuario</h2>
+                            <br>
+                            <div style="text-align: center;">
+                                <iframe src="Pdf/Manual_Tecnico_202203806.pdf" width="700" height="1000" style="display: block; margin: auto;"></iframe>
+                            </div>
+                            <br>
+                            <h6 style="text-align: center;">Link Google Drive</h6>
+                            <br>
+                            <p class="centered-link" style="text-align: center;">
+                            <a href="https://drive.google.com/file/d/1uokNfOcWQM7E38ZQ_4jfbGb4sQZXdEAn/view?usp=sharing" target="_BLANK">https://drive.google.com/file/d/1uokNfOcWQM7E38ZQ_4jfbGb4sQZXdEAn/view?usp=sharing</a></p>
+                            <br>
+                            
+                            <h2 class="title" style="text-align: center;">Trifoliar</h2>
+                            <br>
+                            <div style="text-align: center;">
+                                <iframe src="Pdf/202203806_TRIFOLIAR.pdf" width="1000" height="700" style="display: block; margin: auto;"></iframe>
+                            </div>
+                            <br>
+                            <h6 style="text-align: center;">Link Google Drive</h6>
+            
+                            <br>
+                            <p class="centered-link" style="text-align: center;">
+                             <a href="https://drive.google.com/file/d/1SdIw7QVnizQNA9oh2SHmDor0mG-9bdT4/view?usp=drive_link" target="_BLANK">https://drive.google.com/file/d/1SdIw7QVnizQNA9oh2SHmDor0mG-9bdT4/view?usp=drive_link</a></p>
+                            <br>
+            
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
         
-        <div class="head-box-right">
-            <figure>
-                <title>
-                    Universidad de San Carlos de Guatemala
-                </title>
-                <a href="https://www.usac.edu.gt/">
-                    <img class="header-logo" src="Image/logo_usac.png" alt="USAC" width="80" height="80" title="Universidad de San Carlos de Guatemala">
-                </a>
-                </figure>
-            <figure>
-                <title>
-                    Facultad De Ingeniería Universidad De San Carlos De Guatemala
-                </title>
-                <a href="https://portal.ingenieria.usac.edu.gt/">
-                    <img class="header-logo" src="Image/logo_ingenieria.png" alt="USAC" width="80" height="80" title="Ingenieria Usac">
-                </a>
-            </figure>
-            <figure class="dtt">
-                <title>
-                    Escuela De Ciencias Y Sistemas <br>
-                    Facultad De Ingeniería - USAC
-                </title>
-                <a href="https://dtt-ecys.org/">
-                    <img class="header-logo" src="Image/logo_sistemas.png" alt="USAC" width="80" height="80" title="Escuela de Sistemas Ingenieria, Usac">
-                </a>
-            </figure>
-        </div>
-
-        <div class="title-container">
-            <h1 class="main-title">Practicas Iniciales Ingenieria USAC</h1>
-        </div>
-        <div class="head-box-left">
-            <a href="https://github.com/DaaNiieeL123/202203806_Practica1" class="anchor-author">Hector Daniel Ortiz Osorio - 202203806</a>
-        </div>
-    </div>
-
-    <main>
-        <section id="one">
-            <header></header>
-            <div class="section-container">
-                <div class="first-sub-section">
+        <div id="tab2" class="tab-pane">
+            <!-- Contenido de la segunda pestaña -->
+            <div class="tab-container">
+                <button class="btn btn-primary" onclick="openSubTab('subtab1')">Instalación de Linux en VirtualBox</button>
+                <button class="btn btn-secondary" onclick="openSubTab('subtab2')">Configuración de Conexiones de Redes</button>
+            </div>
+            <!-- Subpestaña 1: Instalación de Linux en VirtualBox -->
+            <div id="subtab1" class="sub-tab-pane">
+                <main style="animation: fade-in 1s ease-out;">
+                <div class="main-content">
+                    <h1 class="title" style="text-align: center;">Instalación del Sistema Operativo Linux en VirtualBox</h1>
                     <br>
-                    <h1 style="text-align: center;">Mantenimiento de Una Computadora "Laptop"</h1>
-                    <br>
-                    
-                    <p> 
-                        En la presente práctica se llevará a cabo un mantenimiento de una laptop, con el objetivo de garantizar su óptimo rendimiento. Este mantenimiento implicará una limpieza profunda que abarca diversos pasos detallados, así como la consideración de cuidados específicos para asegurar un óptimo resultado.
-                        Es esencial realizar una limpieza completa de los equipos de trabajo, como las laptops, con el fin de preservar su eficiencia y prolongar su vida útil.
-                        Durante el procedimiento, se seguirán pasos recomendados para llevar a cabo la limpieza, los cuales incluyen la remoción de polvo y suciedad de las superficies internas y externas de la laptop. Se prestará especial atención a áreas de difícil acceso, como los ventiladores y las ranuras de ventilación, que pueden acumular una cantidad de residuos y afectar el rendimiento de la Laptop.
+                    <p class="parrafo"> La instalación de Linux en VirtualBox permite crear un entorno virtualizado para explorar y utilizar sistemas 
+                        operativos basados en Linux en tu computadora o Laptop. VirtualBox ofrece una plataforma segura y flexible para probar diferentes
+                         distribuciones de Linux, como Ubuntu, Manjaro, entre otros, sin afectar tu sistema operativo principal. Este proceso implica 
+                         crear una máquina virtual dentro de VirtualBox y luego instalar Linux dentro de esa máquina
+                          virtual siguiendo pasos simples y guiados.
                     </p>
                     <br>
-                    <h2 style="text-align: center;">Materiales para el Mantenimiento de una Laptop</h2>
-                    <br>
-                    <p><h5>Los materiales necesarios para llevar a cabo el mantenimiento de una laptop son:</h5></p>
-                    <br>
-                    <ul>
-                        <li>Aire comprimido</li>
-                        <li>Limpia Contactos o Alcohol Isopropílico</li>
-                        <li>Pasta térmica</li>
-                        <li>Trapo de Limpieza o Toalla Absorbente (Papel Mayordomo)</li>
-                        <li>Kit de destornilladores</li>
-                    </ul>
-
-                    <br>
-                    <h2 style="text-align: center;">Video Explicativo de Mantenimiento de Laptop</h2>
+                    <h2 class="title" style="text-align: center;">Video Explicativo de Instalacion del Sistema Operativo Linux en VirtualBox</h2>
                     <br>
                     <h6 style="text-align: center;">Video en Youtube</h6>
                     <br>
                     <div class="main-video">
-                        <a href="https://www.youtube.com/watch?v=nl5BuAOgiFM" target="_BLANK">
-                            <img src="http://i3.ytimg.com/vi/nl5BuAOgiFM/hqdefault.jpg" class="video-image" />
+                        <a href="https://youtu.be/P301OT3aGJo" target="_blank">
+                            <img src="http://img.youtube.com/vi/P301OT3aGJo/0.jpg" class="video-image" />
+                            <br>
                         </a>
                     </div>
-                    <br>
                     <h6 style="text-align: center;">Link Google Drive</h6>
                     <br>
-                    <p style="text-align: center;"><a href="https://drive.google.com/file/d/1C4nkQhY3zRqJ2YE64b_T1GVBAtspnjq7/view?usp=sharing" target="_BLANK">https://drive.google.com/file/d/1C4nkQhY3zRqJ2YE64b_T1GVBAtspnjq7/view?usp=sharing</a></p>
-                    <br>
-                    
-                    <br>
-                    <h2 style="text-align: center;">Manual de Usuario</h2>
-                    <br>
-                    <div style="text-align: center;">
-                        <a href="https://drive.google.com/file/d/1uokNfOcWQM7E38ZQ_4jfbGb4sQZXdEAn/view?usp=sharing">
-                        <img class="header-Manual" src="Image/pdf.jpg" alt="Manual 1" width="700" height="1000" title="Manual Parte 1" style="display: block; margin: auto;">
-                        <br>
-            
-                        </a>
-                    </div>
-                    <br>
-                    <h6 style="text-align: center;">Link Google Drive</h6>
-                    <br>
-                    <p style="text-align: center;"><a href="https://drive.google.com/file/d/1uokNfOcWQM7E38ZQ_4jfbGb4sQZXdEAn/view?usp=sharing" target="_BLANK">https://drive.google.com/file/d/1uokNfOcWQM7E38ZQ_4jfbGb4sQZXdEAn/view?usp=sharing</a></p>
-                    <br>
-                    
-                    <h2 style="text-align: center;">Trifoliar</h2>
-                    <br>
-                    <div style="text-align: center;">
-                        <a href="https://drive.google.com/file/d/1SdIw7QVnizQNA9oh2SHmDor0mG-9bdT4/view?usp=sharing">
-                        <img class="header-trifoliar" src="Image/1.png" alt="Trifoliar 1" width="900" height="600" title="Trifoliar Parte 1" style="display: block; margin: auto;">
-                        <br>
-                        <img class="header-trifoliar" src="Image/2.png" alt="Trifoliar 2" width="900" height="600" title="Trifoliar Parte 2" style="display: block; margin: auto;">
-                    </a>
-                    </div>
-                    <br>
-                    <h6 style="text-align: center;">Link Google Drive</h6>
-
-                    <br>
-                    <p style="text-align: center;"><a href="https://drive.google.com/file/d/1SdIw7QVnizQNA9oh2SHmDor0mG-9bdT4/view?usp=drive_link" target="_BLANK">https://drive.google.com/file/d/1SdIw7QVnizQNA9oh2SHmDor0mG-9bdT4/view?usp=drive_link</a></p>
-                    <br>
-
+                    <p style="text-align: center;"><a href=" " 
+                        target="_blank"> </a></p>
                 </div>
+            </main>
             </div>
-        </section>
-        <br>
-    
-    </main>
-</body>
+            <!-- Subpestaña 2: Configuración de Conexiones de Redes -->
+            <div id="subtab2" class="sub-tab-pane">
+                <main style="animation: fade-in 1s ease-out;">
+                <div class="main-content"></div>
+                <h1 class="title" style="text-align: center;">Configuración de Conexiones de Redes</h1>
+                <br>
+                <p class="parrafo">Configurar conexiones de redes inalámbricas y por cable entre sistemas operativos como Windows y Linux es fundamental 
+                    para la comunicación fluida entre entornos mixtos. Esto implica establecer configuraciones de red adecuadas, como 
+                    asignación de direcciones IP, configuración de adaptadores de red virtuales en entornos de virtualización. Este proceso
+                     facilita la transferencia de datos y recursos compartidos entre diferentes sistemas, promoviendo la compatibilidad entre 
+                     redes por cables/inalámbricas.
+                </p>
+                <br>
+                <h2 class="title" style="text-align: center;">Video Explicativo de Configuración de Conexiones de Redes</h2>
+                <br>
+                <h6 style="text-align: center;">Video en Youtube</h6>
+                <br>
+                <div class="main-video">
+                    <a href="https://youtu.be/JkBCfwDPMss" target="_blank">
+                        <img src="http://img.youtube.com/vi/JkBCfwDPMss/0.jpg" class="video-image" />
+                    </a>
+                </div>
+                <br>
+                <h6 style="text-align: center;">Link Google Drive</h6>
+                <br>
+                <p style="text-align: center;"><a href="" 
+                    target="_blank"> </a></p>
+            </div>
+        </div>
+        </div>
+     </main>
+    </div>
+    <div id="tab3" class="tab-pane">
+        <main style="animation: fade-in 1s ease-out;">
+            <div class="main-content"></div>
+            <br>
+            <h1 class="title" style="text-align: center;">Instalación de Ubuntu "Linux"</h1>
+            <br>
+            <p class="parrafo"> La instalación de Ubuntu en VirtualBox permite crear un entorno virtualizado para explorar y utilizar sistemas 
+                operativos basados en Linux en tu computadora o Laptop. VirtualBox ofrece una plataforma segura y flexible para probar diferentes
+                 distribuciones de Linux, sin afectar tu sistema operativo principal. Este proceso implica 
+                 crear una máquina virtual dentro de VirtualBox y luego instalar Ubuntu dentro de esa máquina
+                  virtual siguiendo los siguientes pasos.
+            </p>
+            <h4 class="title" style="text-align: center;">Link para Descargar el Iso de Ubuntu</h4>
+            <br>
+            <p class="centered-link" style="text-align: center;"><a href="https://ubuntu.com/download/desktop" 
+                target="_blank">https://ubuntu.com/download/desktop</a></p>	
+            <br>
+            <h3 class="title" style="text-align: center;">Comandos para uso de Consola en Ubuntu</h3>
+            <br>
+            <ul class="list">
+                <li>sudo Es un comando que permite realizar acciones como administrador</li>
+                <li>ls Se usa para ver el contenido de un directorio</li>
+                <li>touch Sirve para crear un archivo vacio</li>
+                <li>cp  Se utiliza para copiar un archivo</li>
+                <li>nano Cumple la función de editar un archivo</li>
+                <li>rm  Se usa para eliminar un archivo</li>
+                <li>mv Tiene la función de mover un archivo a otra carpeta</li>
+                <li>cd  Tiene la función de moverse entre carpetas, si se coloca solo se sale de la carpeta actual</li>
+                <li>mkdir Sirve para crear un directorio</li>
+                <li>pwd  Muestra la ruta de la carpeta actual</li>
+                <li>apt-get update  Actualiza la lista de paquetes</li>
+                <li>apt-get upgrade  Actualiza los paquetes instalados</li>
+                <li>apt-get install  Instala un paquete</li>
+                <li>apt-get remove  Desinstala un paquete</li>
+                <li>apt-get purge  Desinstala un paquete y sus archivos de configuración</li>
+                <li>apt-get autoremove  Elimina paquetes que no se usan</li>
+                <li>clear  Limpia la consola</li>
+                <li>exit  Cierra la consola</li>
+            </ul>
+            <h2 class="title" style="text-align: center;">Video Explicativo de Instalacion de Ubuntu</h2>
+            <br>
+            <h6 style="text-align: center;">Video en Youtube</h6>
+            <br>
+            <div class="main-video">
+                <a href="https://www.youtube.com/watch?v=ang6M-PjLJQ" target="_blank">
+                    <img src="http://i3.ytimg.com/vi/ang6M-PjLJQ/hqdefault.jpg" class="video-image" />
+                </a>
+            </div>
+            <br>
+            <h2 class="title" style="text-align: center;">Manual Tecnico</h2>
+            <br>
+            <div style="text-align: center;">
+                <iframe src="Pdf/Manual 3 Grupo No. 4.pdf" width="700" height="1000" style="display: block; margin: auto;"></iframe>
+        </div>
+    </div>
+    </div>
+ </main>
 
+
+
+    </div>
+
+    <script src="script.js" defer></script>
+
+    
+</body>
 </html>
